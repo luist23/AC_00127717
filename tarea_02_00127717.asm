@@ -78,6 +78,4 @@ fibona:   mov     ax, 0000h
     cmp     bx, 22Fh
     jb      fibona
 
-
-
 int 20h
