@@ -57,5 +57,8 @@ one:    add     bx, 1h
 nex:    cmp     bx, 21Fh
         jb      nay
 
+    ; parte II
+    
+
 
 int 20h
