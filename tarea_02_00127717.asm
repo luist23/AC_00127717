@@ -66,6 +66,18 @@ nex:    cmp     bx, 21Fh
     mov     [221h], ax  ; F1 = 1
     mov     bx, 222h
 
+fibona:   mov     ax, 0000h
+    mov     [bx], ax
+    sub     bx, 2h
+    mov     al, [bx]
+    add     bx, 1h
+    add     ax, [bx]
+    add     bx, 1h
+    mov     [bx], ax
+    add     bx, 1h
+    cmp     bx, 22Fh
+    jb      fibona
+
 
 
 int 20h
