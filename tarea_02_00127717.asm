@@ -40,5 +40,6 @@ org     100h
         mov     [20Ch], cl
         
 
+    ;parte II 
 
 int 20h
