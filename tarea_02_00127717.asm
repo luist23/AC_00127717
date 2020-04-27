@@ -42,4 +42,20 @@ org     100h
 
     ;parte II 
 
+    mov     ax, 0000h
+        mov     al, 2d
+        mov     bx, 210h
+        mov     cx, 2d
+nay:    mul     cx
+        mov     [bx], ax
+        cmp     ah, 00h
+        ja      two
+        je      one
+two:    add     bx, 2h
+        jmp     nex
+one:    add     bx, 1h
+nex:    cmp     bx, 21Fh
+        jb      nay
+
+
 int 20h
