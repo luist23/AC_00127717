@@ -57,8 +57,15 @@ one:    add     bx, 1h
 nex:    cmp     bx, 21Fh
         jb      nay
 
-    ; parte II
-    
+    ; parte III
+
+    mov     ax, 0000h
+    mov     ax, 0d
+    mov     [220h], ax  ; F0 = 0
+    mov     ax, 1d
+    mov     [221h], ax  ; F1 = 1
+    mov     bx, 222h
+
 
 
 int 20h
